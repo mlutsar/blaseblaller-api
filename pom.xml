@@ -3,7 +3,19 @@
   <groupId>com.blaller</groupId>
   <artifactId>blaseblaller-api</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>BlaseballApi</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>BlaseballApi</name>
   <description>A Java API for accessing Blaseball and SIBR Chronicler endpoints</description>
   
   <dependencies>
